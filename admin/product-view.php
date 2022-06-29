@@ -1,5 +1,5 @@
 <p class="lead">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, culpa quasi tempore assumenda, perferendis sunt. Quo consequatur saepe commodi maxime, sit atque veniam blanditiis molestias obcaecati rerum, consectetur odit accusamus.
+  Registre nuevos productos, editelos o eliminelos.
 </p>
 <ul class="breadcrumb" style="margin-bottom: 5px;">
     <li>
@@ -128,6 +128,6 @@
                 <p class="text-center"><button type="submit" class="btn btn-primary btn-raised">Agregar a la tienda</button></p>
                 </form>
             </div>
-        </div>     
+        </div>
     </div>
 </div>

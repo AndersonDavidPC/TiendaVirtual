@@ -14,7 +14,7 @@ include './library/consulSQL.php';
        <br>
         <div class="container">
             <div class="page-header">
-              <h1>PRODUCTOS <small class="tittles-pages-logo">STORE</small></h1>
+              <h1>PRODUCTOS <small class="tittles-pages-logo">LILITH</small></h1>
             </div>
             <?php
               $checkAllCat=ejecutarSQL::consultar("SELECT * FROM categoria");
@@ -29,7 +29,7 @@ include './library/consulSQL.php';
                         <span class="caret"></span>
                       </button>
                       <ul class="dropdown-menu" aria-labelledby="drpdowncategory">
-                        <?php 
+                        <?php
                           while($cate=mysqli_fetch_array($checkAllCat, MYSQLI_ASSOC)){
                               echo '
                                 <li><a href="product.php?categ='.$cate['CodigoCat'].'">'.$cate['Nombre'].'</a></li>
@@ -75,7 +75,7 @@ include './library/consulSQL.php';
 
                   $totalregistros = mysqli_query($mysqli,"SELECT FOUND_ROWS()");
                   $totalregistros = mysqli_fetch_array($totalregistros, MYSQLI_ASSOC);
-        
+
                   $numeropaginas = ceil($totalregistros["FOUND_ROWS()"]/$regpagina);
 
                   if(mysqli_num_rows($consultar_productos)>=1){
@@ -93,7 +93,7 @@ include './library/consulSQL.php';
                              <p>
                              <?php
                              $pref=number_format($prod['Precio']-($prod['Precio']*($prod['Descuento']/100)), 2, '.', '');
-                             echo $prod['Descuento']."% descuento: $".$pref; 
+                             echo $prod['Descuento']."% descuento: $".$pref;
                              ?>
                              </p>
                              <?php else: ?>
@@ -105,8 +105,8 @@ include './library/consulSQL.php';
 
                            </div>
                          </div>
-                     </div>     
-                <?php    
+                     </div>
+                <?php
                   }
                   if($numeropaginas>0):
                 ?>
@@ -137,7 +137,7 @@ include './library/consulSQL.php';
                             }
                         }
                     ?>
-                    
+
 
                     <?php if($pagina == $numeropaginas): ?>
                         <li class="disabled">

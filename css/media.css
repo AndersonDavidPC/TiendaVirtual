@@ -1,10 +1,21 @@
 
+:root{
+  --white: #FFFFFF;
+  --black: #000000;
+  --dark: #3B3B3B;
+  --very-dark-desaturated-magenta: #6D4872;
+  --text-input-field: #EFF2F6;
+  --dark-grayish-magenta: #796B79;
+  --light-yellow: #FFFF3D;
+  --light-grayish-cyan: #E0E1E1;
+  --light-grayish-pink: #E6C3CC;
+}
 /* MediaQueries bootstrap*/
 
 /* col-xs */
 @media (max-width: 767px) {
     #btn-mobile-menu{
-        color: #fff;
+        color: var(--white);
     	margin: 10px 0px;
     	margin-left: 3%;
     	outline: none;
@@ -15,14 +26,14 @@
 		position: fixed;
 		width: 70%;
 		height: 100%;
-		background-color: #03a9f4;
-		box-shadow: 0px 2px 7px #3b3b3b;
+		background-color: var(--very-dark-desaturated-magenta);
+		box-shadow: 0px 2px 7px var(--dark);
 		z-index: 100;
-        color: #fff;
+        color: var(--white);
 	}
 	#mobile-menu-list > ul > li > a{
 		text-decoration: none;
-		color: #fff;
+		color: var(--white);
 		width: 100%;
 		display: block;
 		padding: 7px 0px;
@@ -35,19 +46,19 @@
 		background-color: rgba(255, 255, 255,.1);
 	}
 	#button-close-mobile-menu{
-		position:absolute; 
-		top:3px; 
-		right:3px; 
-		outline:none; 
-		background-color: transparent; 
+		position:absolute;
+		top:3px;
+		right:3px;
+		outline:none;
+		background-color: transparent;
 		border: none;
-        color: #fff;
+        color: var(--white);
 	}
     #jumbotron-index{
         padding: 80px 25px;
     }
     .elements-nav-xs{
-        color: #fff;
+        color: var(--white);
         margin: 0px;
         padding: 0px 7px;
         position: absolute;
@@ -60,11 +71,11 @@
         margin-right: 7%;
     }
     .elements-nav-xs:hover{
-        color: #fff;
+        color: var(--white);
         text-decoration: none;
     }
     .elements-nav-xs:focus{
-        color: #fff;
+        color: var(--white);
         text-decoration: none;
         outline: none;
     }
@@ -98,5 +109,5 @@
     .contenedor-tabla{
         width: 90%;
     }
-    
+
 }

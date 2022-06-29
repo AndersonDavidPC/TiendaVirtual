@@ -17,6 +17,17 @@
     font-weight: normal;
     font-style: normal;
 }
+:root{
+  --white: #FFFFFF;
+  --black: #000000;
+  --dark: #3B3B3B;
+  --very-dark-desaturated-magenta: #6D4872;
+  --text-input-field: #EFF2F6;
+  --dark-grayish-magenta: #796B79;
+  --light-yellow: #FFFF3D;
+  --light-grayish-cyan: #E0E1E1;
+  --light-grayish-pink: #E6C3CC;
+}
 body{
     font-family: "FontFamilySPro";
     line-height: 1.5;
@@ -29,14 +40,14 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #fff;
+    background-color: var(--white);
 }
 nav{
     width: 100%;
     position: fixed;
     top: 0px;
-    background-color: #03a9f4;
-    box-shadow: 2px 0px 7px #000;
+    background-color: var(--very-dark-desaturated-magenta);
+    box-shadow: 2px 0px 7px var(--black);
 	z-index: 50;
 }
 .contenedor-tabla{
@@ -49,7 +60,7 @@ nav{
 }
 .contenedor-tr > a{
 	text-decoration: none;
-	color: #fff;
+	color: var(--white);
 }
 .contenedor-tr > a:hover{
 	background-color: rgba(255, 255, 255,.1);
@@ -70,7 +81,7 @@ nav{
 }
 
 .text-navbar{
-    color: #fff;
+    color: var(--white);
     font-size: 19px;
     float: left;
     margin-left: 2%;
@@ -91,15 +102,15 @@ article{
 }
 footer{
     width: 100%;
-    color: #fff;
-    background-color: #333;
+    color: var(--white);
+    background-color: var(--dark-grayish-magenta);
     padding: 40px 0px;
 }
 .text-footer{
-    color: #5bc0de;
+    color: var(--light-yellow);
 }
 footer a{
-    color: #fff;
+    color: var(--white);
 }
 .tittles-pages-logo{
     font-family: "FontFamilyLogo";
@@ -114,18 +125,18 @@ footer a{
     right: 0;
     width: 100%;
     height: auto;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--white);
     z-index: 99999;
 }
 .container-form-admin{
-    border: 1px solid #e0e1e1 !important;
+    border: 1px solid var(--light-grayish-cyan) !important;
     border-radius: 4px;
     padding: 10px;
     margin-top: 25px;
 }
 /* ========================================= index styles ======================================*/
 #container-page-index{
-    background-image: url("../assets/img/font-index.JPG");
+    background-image: url("../assets/img/instagram-feed.jpg");
 }
 #new-prod-index{
     background-color: rgba(255,255,255,.9);
@@ -136,11 +147,11 @@ footer a{
 }
 #distribuidores-index{
     background-color: rgba(186, 188, 171,.87);
-    color: #000;
+    color: var(--black);
 }
 /* ========================================= product styles ======================================*/
 #container-page-product{
-    background-image: url(../assets/img/font-registration.JPG);
+    background-image: url(../assets/img/sky.jpg);
 }
 #store, #infoproduct, #container-pedido{
     background-color: rgba(255,255,255,.97);
@@ -153,7 +164,7 @@ footer a{
 }
 /* ========================================= registration styles ======================================*/
 #container-page-registration{
-    background-image: url(../assets/img/font-registration.jpg);
+    background-image: url(../assets/img/sky.jpg);
 }
 #form-registration{
     min-height: 900px;
@@ -163,13 +174,13 @@ footer a{
 #container-form{
     padding: 20px;
     border-radius: 7px;
-    border: 2px dashed lightblue;
+    border: 2px dashed var(--light-grayish-pink);
 }
 /* ========================================= configAdmin styles ======================================*/
 #container-page-configAdmin{
-    background-image: url(../assets/img/font-registration.JPG);
+    background-image: url(../assets/img/sky.jpg);
 }
 #prove-product-cat-config{
-    background-color: #fff;
+    background-color: var(--white);
     min-height: 900px;
 }

@@ -1,5 +1,5 @@
 <p class="lead">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, culpa quasi tempore assumenda, perferendis sunt. Quo consequatur saepe commodi maxime, sit atque veniam blanditiis molestias obcaecati rerum, consectetur odit accusamus.
+  Lista de administradores.
 </p>
 <ul class="breadcrumb" style="margin-bottom: 5px;">
     <li>
@@ -54,7 +54,7 @@
                                 <td class="text-center">
                                     <form action="process/deladmin.php" method="POST" class="FormCatElec" data-form="delete">
                                         <input type="hidden" name="admin-code" value="<?php echo $adm['id']; ?>">
-                                        <button type="submit" class="btn btn-raised btn-xs btn-danger">Eliminar</button>    
+                                        <button type="submit" class="btn btn-raised btn-xs btn-danger">Eliminar</button>
                                     </form>
                                 </td>
                             </tr>
@@ -92,7 +92,7 @@
                             }
                         }
                     ?>
-                    
+
 
                     <?php if($pagina == $numeropaginas): ?>
                         <li class="disabled">

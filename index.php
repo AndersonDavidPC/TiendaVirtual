@@ -7,7 +7,7 @@
 
 <body id="container-page-index">
     <?php include './inc/navbar.php'; ?>
-    
+
     <section id="slider-store" class="carousel slide" data-ride="carousel" style="padding: 0;">
 
         <!-- Indicators -->
@@ -20,21 +20,21 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="./assets/img/slider1.jpg" alt="slider1">
+                <img src="./assets/img/slider1.jpg" alt="slider1" width="100%">
                 <div class="carousel-caption">
-                    Text Slider 1
+                    Camiseta Dragón
                 </div>
             </div>
             <div class="item">
-                <img src="./assets/img/slider2.jpg" alt="slider2">
+                <img src="./assets/img/slider2.jpg" alt="slider2" width="100%">
                 <div class="carousel-caption">
-                    Text Slider 2
+                    Colección de stickers
                 </div>
             </div>
             <div class="item">
-                <img src="./assets/img/slider3.jpg" alt="slider3">
+                <img src="./assets/img/slider3.jpg" alt="slider3" width="100%">
                 <div class="carousel-caption">
-                    Text Slider 3
+                    Camiseta Bantang
                 </div>
             </div>
         </div>
@@ -49,9 +49,9 @@
             <span class="sr-only">Next</span>
         </a>
     </section>
-    
 
-    <section id="new-prod-index">    
+
+    <section id="new-prod-index">
          <div class="container">
             <div class="page-header">
                 <h1>Últimos <small>productos agregados</small></h1>
@@ -75,7 +75,7 @@
                              <p>
                              <?php
                              $pref=number_format($fila['Precio']-($fila['Precio']*($fila['Descuento']/100)), 2, '.', '');
-                             echo $fila['Descuento']."% descuento: $".$pref; 
+                             echo $fila['Descuento']."% descuento: $".$pref;
                              ?>
                              </p>
                              <?php else: ?>
@@ -86,13 +86,13 @@
                         </p>
                        </div>
                      </div>
-                </div>     
+                </div>
                 <?php
-                     }   
+                     }
                   }else{
                       echo '<h2>No hay productos registrados en la tienda</h2>';
-                  }  
-              	?>  
+                  }
+              	?>
             </div>
          </div>
     </section>
@@ -103,13 +103,13 @@
                    <article style="margin-top:5%;">
                         <p><i class="fa fa-users fa-4x"></i></p>
                         <h3>Registrate</h3>
-                        <p>Registrate como cliente de <span class="tittles-pages-logo">STORE</span> en un sencillo formulario para poder completar tus pedidos</p>
-                        <p><a href="registration.php" class="btn btn-info btn-raised btn-block">Registrarse</a></p>   
+                        <p>Registrate como cliente de <span class="tittles-pages-logo">LILITH</span> en un sencillo formulario para poder completar tus pedidos</p>
+                        <p><a href="registration.php" class="btn btn-info btn-raised btn-block">Registrarse</a></p>
                    </article>
                 </div>
 
                 <div class="col-xs-12 col-sm-6">
-                    <img src="assets/img/tv.png" alt="Smart-TV" class="img-responsive" style="width: 70%; display: block; margin: 0 auto;">
+                    <img src="assets/img/hellokitty.png" alt="Smart-TV" class="img-responsive" style="width: 70%; display: block; margin: 0 auto;">
                 </div>
             </div>
         </div>

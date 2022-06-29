@@ -14,7 +14,7 @@ include './library/consulSQL.php';
        <br>
         <div class="container">
             <div class="page-header">
-              <h1>BÚSQUEDA DE PRODUCTOS <small class="tittles-pages-logo">STORE</small></h1>
+              <h1>BÚSQUEDA DE PRODUCTOS <small class="tittles-pages-logo">LILITH</small></h1>
             </div>
             <div class="container-fluid">
               <div class="row">
@@ -51,7 +51,7 @@ include './library/consulSQL.php';
 
                     $totalregistros = mysqli_query($mysqli,"SELECT FOUND_ROWS()");
                     $totalregistros = mysqli_fetch_array($totalregistros, MYSQLI_ASSOC);
-          
+
                     $numeropaginas = ceil($totalregistros["FOUND_ROWS()"]/$regpagina);
 
                     if(mysqli_num_rows($consultar_productos)>=1){
@@ -72,8 +72,8 @@ include './library/consulSQL.php';
 
                              </div>
                            </div>
-                       </div>     
-                  <?php    
+                       </div>
+                  <?php
                     }
                     if($numeropaginas>0):
                   ?>
@@ -104,7 +104,7 @@ include './library/consulSQL.php';
                               }
                           }
                       ?>
-                      
+
 
                       <?php if($pagina == $numeropaginas): ?>
                           <li class="disabled">

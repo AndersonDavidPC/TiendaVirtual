@@ -1,5 +1,5 @@
 <?php
-define("USER", "root");
-define("SERVER", "localhost");
-define("BD", "store");
-define("PASS", "");
+define("USER", "khziwpjqwl");
+define("SERVER", "lilith-store-server");
+define("BD", "lilith-store-database");
+define("PASS", "A6452I4A4KDHZ5OQ$");

@@ -1,5 +1,5 @@
 <p class="lead">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, culpa quasi tempore assumenda, perferendis sunt. Quo consequatur saepe commodi maxime, sit atque veniam blanditiis molestias obcaecati rerum, consectetur odit accusamus.
+  Información de la categoría.
 </p>
 <ul class="breadcrumb" style="margin-bottom: 5px;">
     <li>
@@ -35,7 +35,7 @@
                                 <div class="form-group label-floating">
                                     <label class="control-label">Nombre</label>
                                     <input class="form-control" value="<?php echo $cate['Nombre']; ?>" type="text" name="categ-name" maxlength="30" required="">
-                                </div>  
+                                </div>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-4">
                                 <div class="form-group label-floating">

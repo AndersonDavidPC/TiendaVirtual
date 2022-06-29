@@ -1,5 +1,5 @@
 <p class="lead">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, culpa quasi tempore assumenda, perferendis sunt. Quo consequatur saepe commodi maxime, sit atque veniam blanditiis molestias obcaecati rerum, consectetur odit accusamus.
+  Listado de órdenes realizadas.
 </p>
 <div class="container">
   <div class="row">
@@ -46,7 +46,7 @@
                             <td class="text-center"><?php echo $order['NumeroDeposito']; ?></td>
                             <td class="text-center"><?php echo $order['Fecha']; ?></td>
                             <td>
-                                <?php 
+                                <?php
                                     $conUs= ejecutarSQL::consultar("SELECT Nombre FROM cliente WHERE NIT='".$order['NIT']."'");
                                     $UsP=mysqli_fetch_array($conUs, MYSQLI_ASSOC);
                                     echo $UsP['Nombre'];
@@ -57,7 +57,7 @@
                             <td class="text-center"><?php echo $order['TipoEnvio']; ?></td>
                             <td class="text-center">
                                 <a href="#!" class="btn btn-raised btn-xs btn-success btn-block btn-up-order" data-code="<?php echo $order['NumPedido']; ?>">Actualizar</a>
-                                <?php 
+                                <?php
                                     if(is_file("./assets/comprobantes/".$order['Adjunto'])){
                                       echo '<a href="./assets/comprobantes/'.$order['Adjunto'].'" target="_blank" class="btn btn-raised btn-xs btn-info btn-block">Comprobante</a>';
                                     }
@@ -67,7 +67,7 @@
                             <td class="text-center">
                               <form action="process/delPedido.php" method="POST" class="FormCatElec" data-form="delete">
                                 <input type="hidden" name="num-pedido" value="<?php echo $order['NumPedido']; ?>">
-                                <button type="submit" class="btn btn-raised btn-xs btn-danger">Eliminar</button>  
+                                <button type="submit" class="btn btn-raised btn-xs btn-danger">Eliminar</button>
                               </form>
                             </td>
                             </tr>
@@ -105,7 +105,7 @@
                             }
                         }
                     ?>
-                    
+
 
                     <?php if($pagina == $numeropaginas): ?>
                         <li class="disabled">
@@ -160,7 +160,7 @@
                     $('#modal-order').modal({
                         show: true,
                         backdrop: "static"
-                    });  
+                    });
                 }
             });
             return false;

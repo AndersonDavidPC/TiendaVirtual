@@ -1,5 +1,5 @@
 <p class="lead">
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum voluptates, corporis nisi dolores cumque obcaecati perferendis, quisquam, ipsa commodi labore molestias dolor itaque nam cupiditate totam, ea dicta? Sit, asperiores?
+	Lista de productos.
 </p>
 <ul class="breadcrumb" style="margin-bottom: 5px;">
     <li>
@@ -59,7 +59,7 @@
                         	<td class="text-center"><?php echo $prod['CodigoProd']; ?></td>
                         	<td class="text-center"><?php echo $prod['NombreProd']; ?></td>
                         	<td class="text-center">
-                        		<?php 
+                        		<?php
                         			$categ=ejecutarSQL::consultar("SELECT Nombre FROM categoria WHERE CodigoCat='".$prod['CodigoCat']."'");
                         			$datc=mysqli_fetch_array($categ, MYSQLI_ASSOC);
                         			echo $datc['Nombre'];
@@ -85,11 +85,11 @@
                         	<td class="text-center">
                         		<form action="process/delprod.php" method="POST" class="FormCatElec" data-form="delete">
                         			<input type="hidden" name="prod-code" value="<?php echo $prod['CodigoProd']; ?>">
-                        			<button type="submit" class="btn btn-raised btn-xs btn-danger">Eliminar</button>	
+                        			<button type="submit" class="btn btn-raised btn-xs btn-danger">Eliminar</button>
                         		</form>
                         	</td>
                         </tr>
-                        <?php 
+                        <?php
                         	$cr++;
                         	}
                         ?>
@@ -123,7 +123,7 @@
                             }
                         }
                     ?>
-                    
+
 
                     <?php if($pagina == $numeropaginas): ?>
                         <li class="disabled">

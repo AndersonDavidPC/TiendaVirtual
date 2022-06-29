@@ -12,12 +12,12 @@
               <h1>REGISTRO <small class="tittles-pages-logo">STORE</small></h1>
             </div>
             <p class="lead text-center">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident assumenda asperiores architecto nostrum blanditiis excepturi voluptatibus, velit ad enim. Aperiam voluptatum est, fugit quisquam libero distinctio nobis porro numquam minus.
+              Al completar este formulario acepta los términos y condiciones del manejo de sus datos dentro de los límites marcados por la ley de habeas data (Ley Estatutaria 1581 de 2012)
             </p>
             <div class="row">
                 <div class="col-sm-5 text-center">
                     <figure>
-                      <img src="./assets/img/img-registration.png" alt="store" class="img-responsive">
+                      <img src="./assets/img/event.jpg" alt="store" class="img-responsive">
                     </figure>
                 </div>
                 <div class="col-sm-7">
@@ -90,8 +90,8 @@
                             </div>
                           </div>
                           <p><button type="submit" class="btn btn-primary btn-block btn-raised">Registrarse</button></p>
-                        </form> 
-                    </div> 
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

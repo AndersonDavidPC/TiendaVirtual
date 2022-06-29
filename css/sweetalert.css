@@ -1,3 +1,16 @@
+var(--white):root{
+  --white: #FFFFFF;
+  --black: #000000;
+  --dark: #3B3B3B;
+  --very-dark-desaturated-magenta: #6D4872;
+  --text-input-field: #EFF2F6;
+  --dark-grayish-magenta: #796B79;
+  --light-yellow: #FFFF3D;
+  --light-grayish-cyan: #E0E1E1;
+  --light-grayish-pink: #E6C3CC;
+  --soft-violet: #D16DF7;
+  --soft-violet: #8E6DF7;
+}
 @keyframes showSweetAlert {
   0% {
     transform: scale(0.7);
@@ -187,10 +200,10 @@
 }
 @keyframes pulseWarning {
   0% {
-    border-color: #F8D486;
+    border-color: var(--soft-violet);
   }
   100% {
-    border-color: #F8BB86;
+    border-color: var(--soft-blue);
   }
 }
 .pulseWarning {
@@ -198,10 +211,10 @@
 }
 @keyframes pulseWarningIns {
   0% {
-    background-color: #F8D486;
+    background-color: var(--soft-violet);
   }
   100% {
-    background-color: #F8BB86;
+    background-color: var(--soft-blue);
   }
 }
 .pulseWarningIns {
@@ -230,7 +243,7 @@ body.stop-scrolling {
   z-index: 1040;
 }
 .sweet-alert {
-  background-color: #ffffff;
+  background-color: var(--white);
   width: 478px;
   padding: 17px;
   border-radius: 5px;
@@ -377,7 +390,7 @@ body.stop-scrolling {
   position: absolute;
   width: 60px;
   height: 120px;
-  background: #ffffff;
+  background: var(--white);
   transform: rotate(45deg);
 }
 .sweet-alert .sa-icon.sa-success::before {
@@ -475,11 +488,7 @@ body.stop-scrolling {
 .sweet-alert button::-moz-focus-inner {
   border: 0;
 }
-/*!
- * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
- * Copyright 2015 Daniel Cardoso <@DanielCardoso>
- * Licensed under MIT
- */
+
 .la-ball-fall,
 .la-ball-fall > div {
   position: relative;
@@ -490,10 +499,10 @@ body.stop-scrolling {
 .la-ball-fall {
   display: block;
   font-size: 0;
-  color: #fff;
+  color: var(--white);
 }
 .la-ball-fall.la-dark {
-  color: #333;
+  color: var(--dark-grayish-magenta);
 }
 .la-ball-fall > div {
   display: inline-block;

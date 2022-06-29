@@ -1,5 +1,5 @@
 <p class="lead">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, culpa quasi tempore assumenda, perferendis sunt. Quo consequatur saepe commodi maxime, sit atque veniam blanditiis molestias obcaecati rerum, consectetur odit accusamus.
+  Información del producto.
 </p>
 <ul class="breadcrumb" style="margin-bottom: 5px;">
     <li>
@@ -100,7 +100,7 @@
                                         	if($prod['NITProveedor']==$prov['NITProveedor']){
                                         		echo '<option selected="" value="'.$prov['NITProveedor'].'">'.$prov['NombreProveedor'].' (Actual)</option>';
                                         	}else{
-                                            	echo '<option value="'.$prov['NITProveedor'].'">'.$prov['NombreProveedor'].'</option>';	
+                                            	echo '<option value="'.$prov['NITProveedor'].'">'.$prov['NombreProveedor'].'</option>';
                                         	}
                                         }
                                     ?>

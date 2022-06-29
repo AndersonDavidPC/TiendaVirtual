@@ -1,5 +1,5 @@
 <p class="lead">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, culpa quasi tempore assumenda, perferendis sunt. Quo consequatur saepe commodi maxime, sit atque veniam blanditiis molestias obcaecati rerum, consectetur odit accusamus.
+  Información del proveedor.
 </p>
 <ul class="breadcrumb" style="margin-bottom: 5px;">
     <li>
@@ -41,7 +41,7 @@
                                 <div class="form-group label-floating">
                                     <label class="control-label">Dirección</label>
                                     <input class="form-control" type="text" value="<?php echo $prov['Direccion']; ?>" name="prove-dir" required="">
-                                </div> 
+                                </div>
                             </div>
                             <div class="col-xs-12 col-md-6">
                                 <div class="form-group label-floating">

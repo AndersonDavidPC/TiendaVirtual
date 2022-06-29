@@ -16,9 +16,9 @@ include './library/consulSQL.php';
         <div class="container">
             <div class="row">
                 <div class="page-header">
-                    <h1>DETALLE DE PRODUCTO <small class="tittles-pages-logo">STORE</small></h1>
+                    <h1>DETALLE DE PRODUCTO <small class="tittles-pages-logo">LILITH</small></h1>
                 </div>
-                <?php 
+                <?php
                     $CodigoProducto=consultasSQL::clean_string($_GET['CodigoProd']);
                     $productoinfo=  ejecutarSQL::consultar("SELECT producto.CodigoProd,producto.NombreProd,producto.CodigoCat,categoria.Nombre,producto.Precio,producto.Descuento,producto.Stock,producto.Imagen FROM categoria INNER JOIN producto ON producto.CodigoCat=categoria.CodigoCat  WHERE CodigoProd='".$CodigoProducto."'");
                     while($fila=mysqli_fetch_array($productoinfo, MYSQLI_ASSOC)){
@@ -48,10 +48,10 @@ include './library/consulSQL.php';
                                 }else{
                                     echo '<p class="text-center text-danger lead">No hay existencias de este producto</p><br>';
                                 }
-                                if($fila['Imagen']!="" && is_file("./assets/img-products/".$fila['Imagen'])){ 
-                                    $imagenFile="./assets/img-products/".$fila['Imagen']; 
-                                }else{ 
-                                    $imagenFile="./assets/img-products/default.png"; 
+                                if($fila['Imagen']!="" && is_file("./assets/img-products/".$fila['Imagen'])){
+                                    $imagenFile="./assets/img-products/".$fila['Imagen'];
+                                }else{
+                                    $imagenFile="./assets/img-products/default.png";
                                 }
                                 echo '<br>
                                 <a href="product.php" class="btn btn-lg btn-primary btn-raised btn-block"><i class="fa fa-mail-reply"></i>&nbsp;&nbsp;Regresar a la tienda</a>

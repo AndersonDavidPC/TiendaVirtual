@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+LILITH<!DOCTYPE html>
 <html lang="es">
 <head>
     <title>Carrito de compras</title>
@@ -55,8 +55,8 @@
                         }else{
                             echo '<p class="text-center text-danger lead">El carrito de compras esta vacío</p><br>
                             <a href="product.php" class="btn btn-primary btn-lg btn-raised">Ir a Productos</a>';
-                                                        
-                        }  
+
+                        }
                     ?>
                 </div>
             </div>

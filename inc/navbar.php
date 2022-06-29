@@ -1,11 +1,11 @@
-<?php 
-    session_start(); 
+<?php
+    session_start();
     error_reporting(E_PARSE);
 ?>
 <nav id="navbar-auto-hidden">
         <div class="row hidden-xs">
             <div class="col-xs-4">
-                <p class="text-navbar tittles-pages-logo">STORE</p>
+                <p class="text-navbar tittles-pages-logo">LILITH</p>
             </div>
             <div class="col-xs-8">
               <div class="contenedor-tabla pull-right">
@@ -14,7 +14,7 @@
                   <a href="product.php" class="table-cell-td">Productos</a>
                   <?php
                       if(!$_SESSION['nombreAdmin']==""){
-                          echo ' 
+                          echo '
                               <a href="carrito.php" class="table-cell-td">Carrito</a>
                               <a href="configAdmin.php" class="table-cell-td">Administración</a>
                               <a href="#!" class="table-cell-td exit-system">
@@ -22,7 +22,7 @@
                               </a>
                            ';
                       }else if(!$_SESSION['nombreUser']==""){
-                          echo ' 
+                          echo '
 
                               <a href="pedido.php" class="table-cell-td">Pedido</a>
                               <a href="carrito.php" class="table-cell-td">Carrito</a>
@@ -34,7 +34,7 @@
                               </a>
                            ';
                       }else{
-                          echo ' 
+                          echo '
 
                           <a href="registration.php" class="table-cell-td">Registro</a>
                               <a href="#" class="table-cell-td" data-toggle="modal" data-target=".modal-login">
@@ -53,29 +53,29 @@
                 <button class="btn btn-default pull-left button-mobile-menu" id="btn-mobile-menu">
                     <i class="fa fa-th-list"></i>&nbsp;&nbsp;Menú
                 </button>
-               
+
                 <?php
                 if(!$_SESSION['nombreAdmin']==""){echo '
                     <a href="#"  id="button-login-xs" class="elements-nav-xs exit-system">
-                        <i class="fa fa-user"></i>&nbsp; '.$_SESSION['nombreAdmin'].' 
+                        <i class="fa fa-user"></i>&nbsp; '.$_SESSION['nombreAdmin'].'
                     </a>';
                 }else if(!$_SESSION['nombreUser']==""){
                     echo '
                     <a href="#"  id="button-login-xs" class="elements-nav-xs exit-system">
-                        <i class="fa fa-user"></i>&nbsp; '.$_SESSION['nombreUser'].' 
+                        <i class="fa fa-user"></i>&nbsp; '.$_SESSION['nombreUser'].'
                     </a>';
                 }else{
                     echo '
                        <a href="#" data-toggle="modal" data-target=".modal-login" id="button-login-xs" class="elements-nav-xs">
                         <i class="fa fa-user"></i>&nbsp; Iniciar Sesión
-                        </a> 
+                        </a>
                    ';
                 }
                 ?>
             </div>
         </div>
     </nav>
-   
+
     <div class="modal fade modal-login" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-sm">
           <div class="modal-content" id="modal-form-login" style="padding: 15px;">
@@ -97,7 +97,7 @@
                 </div>
 
                 <p>¿Cómo iniciaras sesión?</p>
-               
+
                 <div class="radio">
                   <label>
                       <input type="radio" name="optionsRadios" value="option1" checked="">
@@ -111,7 +111,7 @@
                        Administrador
                   </label>
                </div>
-               
+
                 <div class="modal-footer">
                   <button type="submit" class="btn btn-primary btn-raised btn-sm">Iniciar sesión</button>
                   <button type="button" class="btn btn-danger btn-raised btn-sm" data-dismiss="modal">Cancelar</button>
@@ -122,10 +122,10 @@
       </div>
     </div>
     <!-- Fin Modal login -->
-    
+
     <div id="mobile-menu-list" class="hidden-sm hidden-md hidden-lg">
         <br>
-        <h3 class="text-center tittles-pages-logo">STORE</h3>
+        <h3 class="text-center tittles-pages-logo">LILITH</h3>
         <button class="btn btn-default button-mobile-menu" id="button-close-mobile-menu">
         <i class="fa fa-times"></i>
         </button>
@@ -134,7 +134,7 @@
             <li><a href="index.php">Inicio</a></li>
             <li><a href="product.php">Productos</a></li>
             <li><a href="carrito.php">Carrito</a></li>
-            <?php 
+            <?php
                 if(!$_SESSION['nombreAdmin']==""){
                     echo '<li><a href="configAdmin.php">Administración</a></li>';
                 }elseif(!$_SESSION['nombreUser']==""){
